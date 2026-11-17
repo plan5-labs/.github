@@ -10,7 +10,7 @@ every server below can be used from any SiLA 2 client.
 
 ## SiLA 2 servers
 
-Three implementation styles are used:
+Implementation styles:
 
 - **Connector** – built on the [UniteLabs CDK](https://gitlab.com/unitelabs/cdk/python-cdk).
 - **Server** – built with the [`sila2`](https://gitlab.com/SiLA2/sila_python) Python package
@@ -33,9 +33,6 @@ Vendor drivers and libraries are not included in any repository; obtain them fro
 | [tecan-infinite-connector](https://github.com/plan5-labs/tecan-infinite-connector) | Tecan Infinite 200 PRO plate reader (tested: F200 PRO) | USB via [PyLabRobot](https://github.com/PyLabRobot/pylabrobot) | Connector |
 | [tapo-camera-sila2](https://github.com/plan5-labs/tapo-camera-sila2) | TP-Link Tapo network cameras (tested: C232) – snapshots, recording, pan/tilt, image settings | ONVIF + RTSP | Server |
 
-The connectors for the ATC and the Xpeel are ports of atc-sila2 and xpeel-sila2 to the UniteLabs CDK
-and serve the same SiLA features.
-
 ### Robots and controllers
 
 | Repository | Device | Device interface | Type |
@@ -47,18 +44,11 @@ and serve the same SiLA features.
 
 ## SiLA 2 clients
 
-Python client packages for the servers above, generated with `sila2` from the servers' feature
-definitions and shipped with example scripts. Install with
-`uv add git+https://github.com/plan5-labs/<repository>.git`.
-
 | Repository | Device | For server |
 |---|---|---|
 | [atc-sila2-client](https://github.com/plan5-labs/atc-sila2-client) | Applied Biosystems Automated Thermal Cycler (ATC) | [atc-sila2](https://github.com/plan5-labs/atc-sila2) |
 | [PlateLoc-sila2-client](https://github.com/plan5-labs/PlateLoc-sila2-client) | Agilent PlateLoc thermal microplate sealer | [PlateLoc-sila2](https://github.com/plan5-labs/PlateLoc-sila2) |
 | [MicroplateCentrifuge-sila2-client](https://github.com/plan5-labs/MicroplateCentrifuge-sila2-client) | Agilent Microplate Centrifuge | [MicroplateCentrifuge-sila2](https://github.com/plan5-labs/MicroplateCentrifuge-sila2) |
-
-Any SiLA 2 client can also be used, for example the generic [`sila2`](https://gitlab.com/SiLA2/sila_python)
-Python client or [sila2-mcp](https://github.com/plan5-labs/sila2-mcp).
 
 ## Tools
 
